@@ -7,7 +7,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  1%;
   color: #FEF2BF;
 }
 
@@ -16,9 +16,9 @@ body {
   width: 50%;
   margin: auto;
 }
- 
+
 .btn {
-  margin: 0 65px;
+  margin: 0 50px;
   display: inline-block;
   height: 120px;
   width: 120px;
@@ -105,7 +105,11 @@ body {
 .tip {
   color:#FEF2BF;
   font-family: 'Press Start 2P', cursive;
-  line-height: 2;
+  line-height: 1;
   font-size: 0.8rem;
   margin: 30px 0;
+}
+
+.copyright{
+  color: #8f8f8f;
 }
