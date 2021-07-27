@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simons Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press Any Key to Start</h1>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+        <i class="fas fa-arrow-up arrow"></i>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="red" class="btn red">
+        <i class="fas fa-arrow-left arrow"></i>
+      </div>
+
+      <div type="button" id="yellow" class="btn yellow">
+        <i class="fas fa-arrow-right arrow"></i>
+      </div>
+
+    </div>
+
+    <div class = "row">
+      <div type="button" id="blue" class="btn blue">
+        <i class="fas fa-arrow-down arrow"></i>
+      </div>
+    </div>
+
+    <div class="button-cont">
+      <button class="btn-show-pattern">Show Full Pattern (3 left)</button>
+    </div>
+
+    <p class="tip">Tip: You can control the game via mouse clicks or you can use the "W, A, S, D" or Arrow Keys. :)</p>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+  <script src="https://kit.fontawesome.com/f08f1c5fd5.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+
+</body>
+<!--
+  Developed by Christoph Lindstädt on October 20, 2020.
+  The design is based on Angela Yu's "The Complete 2020 Web Development Bootcamp" project.
+  Most of the HTML and CSS were initially provided since this lesson was focused on use of jQuery.
+  I changed the visuals then to arrow buttons and also changed the alignment of the buttons, also I
+  added the game functionality itself, the option to play back the current sequence and the button to do so -
+  additionally you can now play with your W A S D and the Arrow Keys. <3
+-->
+</html>
