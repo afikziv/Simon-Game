@@ -60,6 +60,44 @@ $(document).keydown(function (e) {
     }
 });
 
+//Initializes the game on click of with a mouse, if game is not running ~Mobile~
+
+$(document).click(function (e) {
+    if (!gameControl.gameRunning) {
+        initGame();
+    } else {
+        let color = "";
+        switch (e.key) {
+            case ("w"):
+            case ("ArrowUp"):
+                color = "green";
+                console.log(color);
+                break;
+
+            case ("a"):
+            case ("ArrowLeft"):
+                color = "red";
+                console.log(color);
+                break;
+
+            case ("s"):
+            case ("ArrowDown"):
+                color = "blue";
+                console.log(color);
+                break;
+
+            case ("d"):
+            case ("ArrowRight"):
+                color = "yellow";
+                console.log(color);
+                break;
+
+            default:
+                break;
+        }
+        if (color !== "") { processUserInput(color); }
+    }
+});
 
  // Processes button clicks if the game is running
 
